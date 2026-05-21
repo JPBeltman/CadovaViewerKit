@@ -19,9 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "CadovaViewerKit",
-            dependencies: [
-                .product(name: "Cadova", package: "Cadova"),
-            ],
+            dependencies: ["Cadova"],
             swiftSettings: [.interoperabilityMode(.Cxx)]
         ),
         .testTarget(
